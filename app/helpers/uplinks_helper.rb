@@ -1,0 +1,2 @@
+module UplinksHelper
+end

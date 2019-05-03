@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @uplink.data %>
+</p>
+
+<p>
+  <strong>Avgsnr:</strong>
+  <%= @uplink.avgsnr %>
+</p>
+
+<p>
+  <strong>Rssi:</strong>
+  <%= @uplink.rssi %>
+</p>
+
+<p>
+  <strong>Long:</strong>
+  <%= @uplink.long %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @uplink.lat %>
+</p>
+
+<p>
+  <strong>Snr:</strong>
+  <%= @uplink.snr %>
+</p>
+
+<p>
+  <strong>Thing:</strong>
+  <%= @uplink.thing %>
+</p>
+
+<%= link_to 'Edit', edit_uplink_path(@uplink) %> |
+<%= link_to 'Back', uplinks_path %>

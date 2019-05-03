@@ -1,0 +1,52 @@
+<%= form_with(model: uplink, local: true) do |form| %>
+  <% if uplink.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(uplink.errors.count, "error") %> prohibited this uplink from being saved:</h2>
+
+      <ul>
+      <% uplink.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.text_field :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avgsnr %>
+    <%= form.text_field :avgsnr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rssi %>
+    <%= form.text_field :rssi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :long %>
+    <%= form.text_field :long %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lat %>
+    <%= form.text_field :lat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :snr %>
+    <%= form.text_field :snr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thing_id %>
+    <%= form.text_field :thing_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
