@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Valve Positions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Uplink</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @valve_positions.each do |valve_position| %>
+      <tr>
+        <td><%= valve_position.value %></td>
+        <td><%= valve_position.uplink %></td>
+        <td><%= link_to 'Show', valve_position %></td>
+        <td><%= link_to 'Edit', edit_valve_position_path(valve_position) %></td>
+        <td><%= link_to 'Destroy', valve_position, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Valve Position', new_valve_position_path %>

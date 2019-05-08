@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @accumulator.value %>
+</p>
+
+<p>
+  <strong>Uplink:</strong>
+  <%= @accumulator.uplink %>
+</p>
+
+<%= link_to 'Edit', edit_accumulator_path(@accumulator) %> |
+<%= link_to 'Back', accumulators_path %>

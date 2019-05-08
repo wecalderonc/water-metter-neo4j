@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @valve_position.value %>
+</p>
+
+<p>
+  <strong>Uplink:</strong>
+  <%= @valve_position.uplink %>
+</p>
+
+<%= link_to 'Edit', edit_valve_position_path(@valve_position) %> |
+<%= link_to 'Back', valve_positions_path %>

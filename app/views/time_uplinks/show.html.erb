@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @time_uplink.value %>
+</p>
+
+<p>
+  <strong>Uplink:</strong>
+  <%= @time_uplink.uplink %>
+</p>
+
+<%= link_to 'Edit', edit_time_uplink_path(@time_uplink) %> |
+<%= link_to 'Back', time_uplinks_path %>

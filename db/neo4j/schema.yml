@@ -14,11 +14,24 @@
 :constraints:
 - CONSTRAINT ON ( `neo4j::migrations::schemamigration`:`Neo4j::Migrations::SchemaMigration`
   ) ASSERT `neo4j::migrations::schemamigration`.migration_id IS UNIQUE
+- CONSTRAINT ON ( accumulator:Accumulator ) ASSERT accumulator.uuid IS UNIQUE
+- CONSTRAINT ON ( alarm:Alarm ) ASSERT alarm.uuid IS UNIQUE
+- CONSTRAINT ON ( sensor1:Sensor1 ) ASSERT sensor1.uuid IS UNIQUE
 - CONSTRAINT ON ( thing:Thing ) ASSERT thing.uuid IS UNIQUE
+- CONSTRAINT ON ( timeuplink:TimeUplink ) ASSERT timeuplink.uuid IS UNIQUE
 - CONSTRAINT ON ( uplink:Uplink ) ASSERT uplink.uuid IS UNIQUE
+- CONSTRAINT ON ( uplinkbdownlink:UplinkBDownlink ) ASSERT uplinkbdownlink.uuid IS
+  UNIQUE
 - CONSTRAINT ON ( user:User ) ASSERT user.uuid IS UNIQUE
+- CONSTRAINT ON ( valveposition:ValvePosition ) ASSERT valveposition.uuid IS UNIQUE
 :indexes: []
 :versions:
 - '20190503171543'
 - '20190503172811'
 - '20190503173039'
+- '20190508025352'
+- '20190508025359'
+- '20190508030706'
+- '20190508030720'
+- '20190508030730'
+- '20190508030742'

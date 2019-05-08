@@ -1,0 +1,27 @@
+<%= form_with(model: uplink_b_downlink, local: true) do |form| %>
+  <% if uplink_b_downlink.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(uplink_b_downlink.errors.count, "error") %> prohibited this uplink_b_downlink from being saved:</h2>
+
+      <ul>
+      <% uplink_b_downlink.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :value %>
+    <%= form.text_field :value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uplink_id %>
+    <%= form.text_field :uplink_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
