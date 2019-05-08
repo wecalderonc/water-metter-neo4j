@@ -54,3 +54,6 @@ nohup: no se tendrá en cuenta la entrada
 2019-05-03 17:50:06.644+0000 INFO  Bolt enabled on localhost:7472.
 2019-05-03 17:50:10.440+0000 INFO  Started.
 2019-05-03 17:50:12.854+0000 INFO  Remote interface available at http://localhost:7474/
+2019-05-06 22:25:52.571+0000 INFO  Neo4j Server shutdown initiated by request
+2019-05-06 22:25:55.552+0000 INFO  Stopping...
+2019-05-06 22:25:57.445+0000 INFO  Stopped.

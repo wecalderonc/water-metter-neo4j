@@ -27,8 +27,8 @@ module WaterMetterNeo4j
 
     # Configure where to connect to the Neo4j DB
     # Note that embedded db is only available for JRuby
-    # config.neo4j.session.type = :http
-    # config.neo4j.session.url = 'http://localhost:7474'
+    config.neo4j.session.type = :http
+    config.neo4j.session.url = 'http://neo4j:rompale@ec2-34-218-234-17.us-west-2.compute.amazonaws.com:7474'
     #  or
     # config.neo4j.session.type = :bolt
     # config.neo4j.session.url = 'bolt://localhost:7687'

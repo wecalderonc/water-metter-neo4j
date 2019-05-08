@@ -696,3 +696,10 @@ BatchingMultipleIndexPopulator{activeTasks=1, executor=java.util.concurrent.Thre
 2019-05-03 20:23:37.314+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 58 to [/home/wecalderonc/code/tests/water-metter-neo4j/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/home/wecalderonc/code/tests/water-metter-neo4j/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
 2019-05-03 20:23:37.328+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 58 checkpoint completed in 84ms
 2019-05-03 20:23:37.328+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-06 22:25:55.581+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Shutdown started
+2019-05-06 22:25:55.650+0000 INFO [o.n.k.i.f.GraphDatabaseFacadeFactory] Database is now unavailable
+2019-05-06 22:25:56.157+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 58 checkpoint started...
+2019-05-06 22:25:56.922+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 58 checkpoint completed in 763ms
+2019-05-06 22:25:56.925+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-06 22:25:57.358+0000 INFO [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2019-05-06 22:25:57.361+0000 INFO [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
